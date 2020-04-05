@@ -43,18 +43,27 @@ INSTALLATION
 
 ### Install
 
-1. [Install composer](http://getcomposer.org/)
-2. Run
+[Install composer](http://getcomposer.org/)
+
+### Download sources
+
+[https://github.com/YevheniiGorg/Cinema/archive/master.zip](/YevheniiGorg/Cinema/archive/master.zip)
+
+### Or clone repository manually
 ~~~
-composer create-project YevheniiGorg/Cinema myproject.com
+git clone https://github.com/YevheniiGorg/Cinema.git
+~~~
 
-cd myproject.com
+### Install composer dependencies
+~~~
 composer update
+~~~
 
+### Apply migrations
+~~~
 yii migrate --migrationPath=@yii/rbac/migrations
 yii migrate
 ~~~
-
 
 CONFIGURATION
 -------------
@@ -66,9 +75,9 @@ Edit the file `config/db.php` with real data, for example:
 ```php
 return [
     'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
+    'dsn' => 'mysql:host=localhost;dbname=yii2cinema',
     'username' => 'root',
-    'password' => '1234',
+    'password' => '',
     'charset' => 'utf8',
 ];
 ```
