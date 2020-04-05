@@ -1,0 +1,277 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+/* my styles */
+.main-page__news-section {
+    padding: 60px 0 80px 0;
+}
+.main-page__news-section .news-widget {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+}
+@media screen and (max-width: 1000px) {
+    .main-page__news-section .news-widget {
+        grid-gap: 12px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .main-page__news-section .news-widget {
+        grid-template-columns: 1fr;
+    }
+}
+.main-page__news-section .news-widget .single-new {
+    border-radius: 6px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+.main-page__news-section .news-widget .single-new .main-page__post-description {
+    padding: 16px 16px 25px 16px;
+}
+@media screen and (max-width: 1000px) {
+    .main-page__news-section .news-widget .single-new .main-page__post-description {
+        padding: 16px 10px;
+    }
+}
+.main-page__news-section .news-widget .single-new .main-page__post-description .desc-line {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #A9A9A9;
+    padding-bottom: 16px;
+}
+.main-page__news-section .news-widget .single-new .main-page__post-description .desc-line p {
+    line-height: 1;
+}
+.main-page__news-section .news-widget .single-new .main-page__post-description .post-title {
+    margin: 0;
+    padding-bottom: 16px;
+}
+.main-page__news-section .news-widget .single-new .main-page__post-description .post-title a {
+    color: ;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+.main-page__news-section .news-widget .single-new .main-page__post-description .post-title a:hover {
+    color: ;
+    text-decoration: none;
+}
+.main-page__news-section .news-widget .single-new .main-page__post-description .short-description p {
+    color: #888888;
+    font-size: 14px;
+    line-height: 16px;
+    margin: 0;
+    padding-bottom: 25px;
+}
+.main-page__news-section .news-widget .single-new .main-page__post-description .share-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    line-height: 1;
+}
+.main-page__news-section .news-widget .single-new .main-page__post-description .share-block .share {
+    display: flex;
+    align-items: center;
+}
+.main-page__news-section .news-widget .single-new .main-page__post-description .share-block .share p {
+    color: #A9A9A9;
+    font-size: 13px;
+    line-height: 1;
+    margin: 0;
+}
+.main-page__news-section .news-widget .single-new .main-page__post-description .share-block .share .social {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+.main-page__news-section .news-widget .single-new .main-page__post-description .share-block .share .social li {
+    margin-left: 16px;
+}
+.main-page__news-section .news-widget .single-new .main-page__post-description .share-block .share .social li a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-page__news-section .news-widget .single-new .post-img img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px 6px 0px 0px;
+}
+.my-container{
+    width: 100%;
+    max-width: 1254px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.main-page__content .main-page__block-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.main-page__content .main-page__news-section .news-widget {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+}
+.film-item .seance{
+    border: 1px solid;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.row_cinema{
+    display: flex;
+}
+.place_cinema{
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+    margin: 5px;
+    text-align: center;
+    padding-top: 3px;
+}
+.place_cinema.sold{
+    background-color: #a7a7a794;
+    cursor: none;
+}
+.place_cinema.free.active{
+    background-color: #d61616bd;
+}
+.place_cinema.free.active:hover{
+    background-color:#d616166b;
+}
+.place_cinema.free:hover{
+    background-color: #a7a7a794;
+    cursor: pointer;
+}
+#buy-form .form-group button.btn{
+    display: none;
+}
+#buy-form .form-group button.btn.active{
+    display: inline-block;
+}
+.place_cinema.sales{
+    background-color: #17171794;
+    color: white;
+}
