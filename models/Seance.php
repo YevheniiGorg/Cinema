@@ -165,7 +165,6 @@ class Seance extends \yii\db\ActiveRecord
     {
         $this->cinema_places_ar = json_decode($this->cinema_places);
         parent::afterFind();
-
     }
 
     public function beforeSave($insert)

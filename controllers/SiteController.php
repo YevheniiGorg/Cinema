@@ -118,8 +118,11 @@ class SiteController extends Controller
                     $seance->cinema_places_ar[$val] = CinemaPlaces::PLACE_SOLD;
                 }
                 $film->popularity_rating += count($buy_form->array_tickets);
-                if( $film->save() && $seance->save()){
+
+                if($film->save() && $seance->save()){
                     return $buy_form['name']." congratulations to you! You bought ". count($buy_form['array_tickets']) ." place!" ;
+                }else{
+                    return "Error saving!";
                 }
             }
         }

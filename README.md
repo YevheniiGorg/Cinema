@@ -63,8 +63,12 @@ http://localhost/basic/web/
 
 ### Install from an Archive File
 
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `basic` that is directly under the Web root.
+1. [Install composer](http://getcomposer.org/)
+2. Run
+composer create-project YevheniiGorg/Cinema myproject.com --ignore-platform-reqs
+cd myproject.com
+composer run-script docker:build
+Go to http://yii2-starter-kit.localhost
 
 Set cookie validation key in `config/web.php` file to some random secret string:
 

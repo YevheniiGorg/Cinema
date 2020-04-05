@@ -226,8 +226,8 @@ class m200402_064838_seed_data extends Migration
         $this->insert('{{%seance}}', [
             'id' => 5,
             'film_id' => 3,
-            'slug' => 'fourth-seance',
-            'title' => 'Fourth seance',
+            'slug' => 'fifth-seance',
+            'title' => 'Fifth seance',
             'body' => '',
             'cinema_places' =>'[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]',
             'seance_time' => 18,
@@ -242,8 +242,8 @@ class m200402_064838_seed_data extends Migration
         $this->insert('{{%seance}}', [
             'id' => 6,
             'film_id' => 4,
-            'slug' => 'fifth-seance',
-            'title' => 'Fifth seance',
+            'slug' => 'sixth-seance',
+            'title' => 'Sixth seance',
             'body' => '',
             'cinema_places' =>'[0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]',
             'seance_time' => 12,
