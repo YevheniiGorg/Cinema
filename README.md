@@ -58,8 +58,6 @@ composer update
 yii migrate --migrationPath=@yii/rbac/migrations
 yii migrate
 ~~~
-Go to http://yii2-starter-kit.localhost
-
 
 
 CONFIGURATION
