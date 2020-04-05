@@ -66,8 +66,8 @@
     },
     "repositories": [
         {
-            "type": "vcs",
-            "url": "https://github.com/yevheniigorg/cinema"
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ]
 }

@@ -39,8 +39,6 @@ The minimum requirement by this project template that your Web server supports P
 INSTALLATION
 ------------
 
-### Install via Composer
-
 ### Install
 
 [Install composer](http://getcomposer.org/)
