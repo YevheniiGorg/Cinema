@@ -57,15 +57,6 @@ git clone https://github.com/YevheniiGorg/Cinema.git
 composer update
 ~~~
 
-### Apply migrations
-~~~
-yii migrate --migrationPath=@yii/rbac/migrations
-yii migrate
-~~~
-
-CONFIGURATION
--------------
-
 ### Database
 
 Edit the file `config/db.php` with real data, for example:
@@ -79,6 +70,16 @@ return [
     'charset' => 'utf8',
 ];
 ```
+
+### Apply migrations
+~~~
+yii migrate --migrationPath=@yii/rbac/migrations
+yii migrate
+~~~
+
+CONFIGURATION
+-------------
+
 DEMO DATA
 ------------
 ### Demo Users
